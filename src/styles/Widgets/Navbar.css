@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(8, 4, 34);
+  color: azure;
+  padding: 9px 12px;
+}
+.main-navbar li {
+  list-style: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.main-navbar li:hover {
+  color: aquamarine;
+  transition: 0.4s;
+}
+
+.main-navbar .nav-items ul {
+  display: flex;
+}
+
+.main-navbar .nav-items li {
+  padding: 10px;
+}
+
+.main-navbar .social-media-items ul {
+  display: flex;
+}
+
+.main-navbar .social-media-items li {
+  padding: 10px;
+}

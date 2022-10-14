@@ -1,0 +1,37 @@
+.news-body-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3rem 1fr;
+  margin: 3rem 15rem;
+  gap: 20px;
+}
+.news-heading {
+  font-size: 2.5rem;
+  color: gray;
+}
+
+@media (max-width: 1300px) {
+  .news-body-container {
+    margin: 2rem 6rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .news-body-container {
+    margin: 1rem 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-body-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .news-body-container {
+    margin: 0;
+  }
+}

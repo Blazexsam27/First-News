@@ -1,0 +1,40 @@
+.recent-news-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: fit-content;
+  transition: 0.5s;
+  cursor: pointer;
+  border: 1px solid #aaaaaa;
+  border-radius: 2px;
+}
+
+.recent-news-card-container .card-image {
+  background: url("https://c.ndtvimg.com/2022-07/qdnlmln_biden-saudi_625x300_16_July_22.jpeg");
+  background-size: cover;
+  grid-column: 1/2;
+  border-radius: 3px;
+  margin: 5px;
+}
+
+.recent-news-card-container .card-text {
+  grid-column: 2/4;
+  padding: 5px;
+}
+
+.recent-news-card-container .card-text .card-title {
+  font-size: 2rem;
+}
+
+.recent-news-card-container .card-text .card-desc {
+  font-size: 1.2rem;
+}
+
+.recent-news-card-container:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+@media (max-width: 768px) {
+  .recent-news-card-container {
+    grid-template-columns: 1fr;
+  }
+}

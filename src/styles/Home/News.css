@@ -1,0 +1,14 @@
+.news-container {
+  height: auto;
+  width: auto;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-heading {
+  border-bottom: 3px solid gray;
+  margin-bottom: -10px;
+  grid-column: 2/4;
+}

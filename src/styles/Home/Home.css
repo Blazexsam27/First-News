@@ -1,0 +1,10 @@
+.webpage-heading {
+  font-size: 6rem;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+}
+
+.webpage-heading span {
+  color: #00abff;
+  font-family: "Roboto Slab", serif;
+}
