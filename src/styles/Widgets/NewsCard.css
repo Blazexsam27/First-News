@@ -5,6 +5,9 @@
   border: 1px solid #aaaaaa;
   border-radius: 5px;
   grid-template-rows: repeat(5, 1fr);
+  cursor: pointer;
+  transition: 0.5s;
+  margin-bottom: 5px;
 }
 
 .news-card-container .card-image {
@@ -32,6 +35,10 @@
 .news-card-container .card-text .card-desc {
   font-size: 1.8rem;
   color: rgb(77, 77, 77);
+}
+
+.news-card-container:hover {
+  background: #9595b4;
 }
 
 @media (max-width: 768px) {

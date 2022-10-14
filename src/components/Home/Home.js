@@ -1,29 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/Home/Home.css";
-import CategoryNavbar from "../Widgets/CategoryNavbar";
-import Trending from "./Trending";
+import Category from "./Category";
 import NewsBody from "./NewsBody";
 
 export default function Home() {
-  const getTrendingNews = async () => {
-    const data = await fetch("/api/news", {
-      method: "GET",
-    });
-    const parsedData = await data.json();
+  const [category, setCategory] = useState("general");
+  const changeCategory = (e) => {
+    setCategory(e.target.className);
   };
-
-  useEffect(() => {
-    getTrendingNews();
-  }, []);
 
   return (
     <>
       <p className="webpage-heading">
         <span>First</span> News
       </p>
-      <CategoryNavbar />
-      <Trending />
-      <NewsBody />
+      <Category changeCategory={changeCategory} />
+      <NewsBody category={category} />
     </>
   );
 }

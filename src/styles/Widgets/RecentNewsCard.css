@@ -4,8 +4,9 @@
   height: fit-content;
   transition: 0.5s;
   cursor: pointer;
-  border: 1px solid #aaaaaa;
-  border-radius: 2px;
+  border: 1.2px solid #aaaaaa;
+  border-radius: 5px;
+  margin-bottom: 3px;
 }
 
 .recent-news-card-container .card-image {
@@ -26,11 +27,11 @@
 }
 
 .recent-news-card-container .card-text .card-desc {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .recent-news-card-container:hover {
-  background-color: rgb(221, 221, 221);
+  background-color: #9595b4;
 }
 
 @media (max-width: 768px) {

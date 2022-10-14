@@ -12,6 +12,11 @@
   flex-direction: column;
 }
 
+.recent-news-container a {
+  color: #000;
+  text-decoration: none;
+}
+
 .recent-news-heading {
   border-bottom: 3px solid gray;
   margin-bottom: -10px;

@@ -14,9 +14,15 @@ export default function Navbar() {
       </div>
       <div className="social-media-items">
         <ul>
-          <li>I</li>
-          <li>T</li>
-          <li>F</li>
+          <li>
+            <i class="zmdi zmdi-instagram"></i>
+          </li>
+          <li>
+            <i class="zmdi zmdi-twitter-box"></i>
+          </li>
+          <li>
+            <i class="zmdi zmdi-facebook"></i>
+          </li>
         </ul>
       </div>
     </nav>
