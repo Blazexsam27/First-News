@@ -5,7 +5,7 @@ export default function NewsCard(props) {
   const { title, description, image, publishedAt } = props;
   return (
     <>
-      <div className="news-card-container" key={publishedAt}>
+      <div className="news-card-container">
         <div
           className="card-image"
           style={{ background: `url('${image}')`, backgroundSize: "cover" }}

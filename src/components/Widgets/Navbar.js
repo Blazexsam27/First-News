@@ -1,27 +1,33 @@
 import React from "react";
 import "../../styles/Widgets/Navbar.css";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <nav className="main-navbar">
       <div className="nav-items">
         <ul>
-          <li>Home</li>
-          <li>Explore</li>
-          <li>Contact</li>
-          <li>About</li>
+          <Link to={"/"}>
+            <li>Home</li>
+          </Link>
+          <Link to={"/about"}>
+            <li>Contact</li>
+          </Link>
+          <Link to={"/about"}>
+            <li>About</li>
+          </Link>
         </ul>
       </div>
       <div className="social-media-items">
         <ul>
           <li>
-            <i class="zmdi zmdi-instagram"></i>
+            <i className="zmdi zmdi-instagram"></i>
           </li>
           <li>
-            <i class="zmdi zmdi-twitter-box"></i>
+            <i className="zmdi zmdi-twitter-box"></i>
           </li>
           <li>
-            <i class="zmdi zmdi-facebook"></i>
+            <i className="zmdi zmdi-facebook"></i>
           </li>
         </ul>
       </div>

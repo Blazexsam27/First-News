@@ -2,39 +2,62 @@ const express = require("express");
 
 const router = express.Router();
 
+const { getNewsCategoryWise } = require("../services");
+
 // api to get main news + recent news.
-router.get("/general", async (req, res) => {
-  const { getNewsList } = require("../services");
-  const newsList = await getNewsList();
-  return res.send(newsList);
+router.get("/general/:page?", async (req, res) => {
+  try {
+    const page = req.params.page;
+    const { getNewsList } = require("../services");
+    const newsList = await getNewsList(page);
+    return res.send(newsList);
+  } catch (error) {
+    return res.status(404).send("No Data Found");
+  }
 });
 
 // api to get science related news.
-router.get("/science", async (req, res) => {
-  const { getScienceNewsList } = require("../services");
-  const newsList = await getScienceNewsList();
-  return res.send(newsList);
+router.get("/science/:page?", async (req, res) => {
+  try {
+    const page = req.params.page;
+    const newsList = await getNewsCategoryWise(page, "science");
+    return res.send(newsList);
+  } catch (error) {
+    return res.status(404).send("No Data Found");
+  }
 });
 
 // api to get science related news.
-router.get("/business", async (req, res) => {
-  const { getBusinessNewsList } = require("../services");
-  const newsList = await getBusinessNewsList();
-  return res.send(newsList);
+router.get("/business/:page?", async (req, res) => {
+  try {
+    const page = req.params.page;
+    const newsList = await getNewsCategoryWise(page, "business");
+    return res.send(newsList);
+  } catch (error) {
+    return res.status(404).send("No Data Found");
+  }
 });
 
 // api to get science related news.
-router.get("/sports", async (req, res) => {
-  const { getSportsNewsList } = require("../services");
-  const newsList = await getSportsNewsList();
-  return res.send(newsList);
+router.get("/sports/:page?", async (req, res) => {
+  try {
+    const page = req.params.page;
+    const newsList = await getNewsCategoryWise(page, "sports");
+    return res.send(newsList);
+  } catch (error) {
+    return res.status(404).send("No Data Found");
+  }
 });
 
 // api to get science related news.
-router.get("/health", async (req, res) => {
-  const { getHealthNewsList } = require("../services");
-  const newsList = await getHealthNewsList();
-  return res.send(newsList);
+router.get("/health/:page?", async (req, res) => {
+  try {
+    const page = req.params.page;
+    const newsList = await getNewsCategoryWise(page, "health");
+    return res.send(newsList);
+  } catch (error) {
+    return res.status(404).send("No Data Found");
+  }
 });
 
 module.exports = router;

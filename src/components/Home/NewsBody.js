@@ -11,7 +11,7 @@ export default function NewsBody(props) {
   const [news, setNews] = useState([]);
 
   const getNewsList = async () => {
-    const url = "/api/news/" + category;
+    const url = `http://localhost:8000/api/news/${category}`;
     const data = await fetch(url);
     const newsList = await data.json();
     setRecentNews(newsList.articles.slice(0, 10));
@@ -38,8 +38,8 @@ export default function NewsBody(props) {
         </div>
       ) : (
         <div className="news-body-container">
-          <RecentNews news={recentNews} />
-          <News news={news} />
+          <RecentNews news={recentNews} category={category} />
+          <News news={news} category={category} />
         </div>
       )}
     </>

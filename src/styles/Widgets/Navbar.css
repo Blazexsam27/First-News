@@ -11,10 +11,12 @@
   color: azure;
   padding: 9px 12px;
 }
+
 .main-navbar li {
   list-style: none;
   font-size: 1.5rem;
   cursor: pointer;
+  color: white;
 }
 
 .main-navbar li:hover {

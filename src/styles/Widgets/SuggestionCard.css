@@ -1,0 +1,23 @@
+.suggestion-card {
+  cursor: pointer;
+  display: flex;
+  transition: 0.5s;
+  flex: 1;
+  margin: 5px 0;
+}
+
+.suggestion-card .card-text {
+  padding: 5px;
+}
+
+.suggestion-card .card-text .card-title {
+  font-size: 2rem;
+}
+
+.suggestion-card .card-text .card-desc {
+  font-size: 1.4rem;
+}
+
+.suggestion-card:hover {
+  background-color: #9595b4;
+}

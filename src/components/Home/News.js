@@ -4,14 +4,18 @@ import NewsCard from "../Widgets/NewsCard";
 import { Link } from "react-router-dom";
 
 export default function News(props) {
-  const { news } = props;
+  const { news, category } = props;
   return (
     <>
       <p className="news-heading"> News Heading</p>
       <div className="news-container">
         {news.map((item) => {
           return (
-            <Link to={"/fullpost"} state={{ from: item }}>
+            <Link
+              to={"/fullpost"}
+              state={{ from: item, category: category }}
+              key={item.publishedAt}
+            >
               <NewsCard
                 title={item.title}
                 description={item.description}

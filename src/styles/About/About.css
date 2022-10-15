@@ -1,0 +1,40 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 20rem;
+  height: 75vh;
+}
+.about-container .app-logo {
+  grid-column: 1/2;
+  font-size: 8rem;
+  justify-content: center;
+}
+.about-container .app-logo span {
+  color: #00abff;
+}
+
+.about-container .app-description {
+  grid-column: 2/3;
+  font-size: 3rem;
+}
+
+@media (max-width: 1300px) {
+  .about-container {
+    margin: 2rem 10rem;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-container {
+    margin: 1rem 5rem;
+    height: 85vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    margin: 1rem 1rem;
+    height: 90vh;
+  }
+}

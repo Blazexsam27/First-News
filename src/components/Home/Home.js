@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../../styles/Home/Home.css";
 import Category from "./Category";
+import About from "./Footer";
 import NewsBody from "./NewsBody";
 
 export default function Home() {

@@ -1,7 +1,6 @@
 // component to show trending news in grid format
 
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import "../../styles/Home/Category.css";
 
 export default function Category(props) {

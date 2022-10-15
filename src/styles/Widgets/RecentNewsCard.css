@@ -10,7 +10,6 @@
 }
 
 .recent-news-card-container .card-image {
-  background: url("https://c.ndtvimg.com/2022-07/qdnlmln_biden-saudi_625x300_16_July_22.jpeg");
   background-size: cover;
   grid-column: 1/2;
   border-radius: 3px;
