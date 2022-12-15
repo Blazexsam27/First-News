@@ -13,3 +13,27 @@
 
 #### *TECHNOLOGIES USED*
 ###### HTML5, CSS3, ExpressJs, ReactJs, newsapi.org, javascript.
+
+## Install frontend dependencies
+
+```bash
+  cd First-News
+  npm install
+```
+## Install backend dependencies
+```bash
+  cd backend
+  npm install
+```
+
+## Run app
+### start backend server
+```bash
+  cd backend
+  node index
+```
+### start frontend
+```bash
+  cd First-News
+  npm start
+```
